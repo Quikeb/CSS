@@ -1,0 +1,63 @@
+body {
+  background-color: aquamarine ;}
+
+/* son patrones que permiten espesificos a eñementos de un apagina web
+
+Tipos de selectores
+
+1. Selectores Basicos
+  -selectores de Clase
+  -selectores de tipo
+ 
+
+  2. Selectores de Clase 
+
+  4.Selectores combinados
+    -decendientes
+    -Hijo directo
+    -Elemento adjacente
+    Hermano General
+
+
+    5.Selectores de atributos
+    -atribnuto
+    -atributoi valor
+
+  6. Selectores Avanzdos
+    -pseudo clases
+    -pseudo elementos
+*/
+
+/* 
+
+Selectores Basicos
+
+*/
+
+/* 
+Selectores universal seleccionar todos los elementos de un documento
+*/
+*{ border: 2px solid red;
+/* Resset basico */
+
+margin: 0 ;
+padding: 0;
+box-sizing: border-box }
+
+/* Selectores de Tipo -> seleciona un tipo de elemento en html */
+
+
+body{
+  background-color: lightcyan;
+}
+
+h1 {color: darkblue
+}
+
+p {
+  font-size: 24px;
+}
+
+header {
+  background-color: lightgreen;
+}
