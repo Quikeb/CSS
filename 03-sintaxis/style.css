@@ -1,0 +1,19 @@
+/* 
+
+  Sintaxis
+
+  loa sintaxis se isa para definir estilos que se apican alos elementos de una pagina web.
+
+    Consta de 3 componentes principales 
+
+      Selector {
+      
+        propiedad: valor; // ; punto y coma despues de cada valor
+        propiedad: valor  // ; se puede omitir en la ultima propiedad
+*/
+
+h1 {
+  color: orange; 
+  font-size: 120px;
+  font-family: sans-serif
+}
