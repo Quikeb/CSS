@@ -1,0 +1,118 @@
+/* 
+Fuentes personalizadas
+
+    -Fuentes Externas
+  
+      Llamamos desde servidores externos
+  
+    Google Fonts
+
+      Es un servicio o catalogo de fuentes que podemos usar de manera gratuita en internet.
+
+      - Optimizadas para digital
+      - Gratuitas de uso comercial
+      - Curadas y de añta cañodad
+      - Codigo de vinculacion para Web
+
+      https://fonts.google.com/
+      
+      1. Seleccionar la fuente y traemos el codigo de inscrustacion o embed code y html lo agregamos dentro de las etiquetas <head>
+
+      2. Definimos las reglas de CSS para los elementos a los que queremos aplicar. Usamos las propiedades Font- Family Font-Weinght
+
+
+    -Fuentes internas
+
+
+      Llamamos desde nuestro propio servidor o carpeta de recurso
+
+        1. devemos tener los archivos en una carpeta especifica en una carpeta especifica
+        2. Formatos comunes son  .ttf .otf .wpft2 etc...
+        3. Declaramos en CSS @font-face
+
+          @Font-face{
+            font-family: nombrefuente; // dos palablas entre ""
+            src: url(ubicacion) formato; // ubi9cacion y formato entre ""
+          }
+
+        4.Creamos reglas de Css 
+
+        selector {
+        font-family: nombrefuente: respaldo ; 
+        }
+*/
+
+
+  /* TIPOGRAFIAS ESTATICAS */
+h1 {
+  font-family:"Poppins": sans-serif;
+  font-weight: 700; /* Elije el grosor o peso de una tipografia */
+  font-style: italic; /*Eloje si es italica o  cursiva  */
+}
+
+p {
+  font-family: "Poppins": sans-serif;
+  font-weight: 400;
+}
+
+/* tIPOGRAFIAS VARIABLES  */
+
+.title {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 876;
+  font-style: italic;
+}
+.title:hover {
+  font-weight: 182;
+  transition: font-weight 1s ease;
+}
+
+.text {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Elegir Fuentes distintas para google fonts.
+Una para el titulo
+una para el parrafo
+Crear la regla CSS para cada elementon con un selector de id 
+
+Nota: comentar los codifoa de inscrystacion  anteriores*/
+
+.title {
+  font-family: "Jaro", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.text {
+  font-family: "Edu AU VIC WA NT Hand", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+/* Fuentes internas */
+@font-face {
+  font-family: "Halo";
+  src: url("./Fonts/Halo Dek.ttf"),  format(.ttf);
+}
+
+@font-face {
+  font-family: "Vampire";
+  src: url("./Fonts/VampireWars.otf"), format(.otf);
+}
+
+#title {
+  font-family: "Halo",sans-serif;
+}
+
+#text {
+  font-family: "Vampire";
+}
