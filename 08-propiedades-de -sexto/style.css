@@ -1,0 +1,55 @@
+body {
+  background-color: rgb(255, 72, 0);
+}
+
+/*
+  Propiedades de texto rstan relacionados con el estilo de los textos.
+
+  Permitencontrolar su apariencia alineacion espaciado y decoración. 
+
+  Principales 
+
+  Color: -> define color del texto. recibe diferentes tipos de valores: Keywors, hecadecimal, rgb o rgba, transparent.
+
+  Font-family: -> Define la familia tipografica del texto. Recove los nombres la famiolia si son de dos palablas se escriben entre comillas, acepta mas de dos calores separados por una "," como fuente de respaldo
+
+  Font size -> define el tamaño del texto. acepta vañores en xp em t rom porcentajes determinado, terminos predefinidos 
+
+  Font-style -> Es el estilo de la fuente u recibe tres parametros normal, italic y oblique  
+
+  text-aling -> define la alineacion del texto reciben left rigth center justify star y end
+
+  text-decoration -> añade ñinea transversalal tecto. recive valores: none 
+  */
+
+
+h1 {
+  color: bisque; /* keywords */
+  font-family: garamond, 'Arial Narrow Bold', sans-serif;
+  font-size: 96 px;
+  font-size: 100%; /* 16% = 100 */
+  font-size: xx-large;
+  font-style: inherit;
+  text-align: center;
+  text-decoration:  underline;
+}
+
+p {
+  color: white;
+  font-family: helvetica, tahoma;
+  font-size: 96 px;
+  font-size: 100%; /* 16% = 100 */
+  font-style: inherit;
+  text-align: right;
+  text-decoration: none;
+}
+
+.important { 
+  text-decoration: underline;
+}
+
+.a {
+  color: yellow;
+  font-size: xx-large;
+  text-decoration: none;
+}
