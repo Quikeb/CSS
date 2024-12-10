@@ -1,0 +1,69 @@
+body{
+
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+  background-color: darkorchid;
+  color: whitesmoke;
+
+  /* HEREDADA */
+  width: 100px; /* U.Absoluta */
+  width: 50%; /* U.Relativa */
+  width: auto; /* default */
+
+}
+
+/* 
+  Ancho y alto
+  
+  -los elementos de bloque miden todo el ancho disponible de su contenedor.
+
+  -los elementos de linea miden el ancho de su contenido.
+
+  -los elelemntos de lidea miden el alto de su contenido, considerando un espacio entre lineas.
+
+
+  Width (ancho) y heigth (alto)
+
+  Se uisa para establecer las dimenciones de un elemento en una pagina web.
+
+  Estas propiedades permiten definir el tamaño de los elementosm como cajas, imagenes o contenedores de manera explicita.
+
+  -Width  Establece el anbcho de un elemento y podemos especificar su dimencion horizontal con unidades como px % em y rem...
+
+  -heigth establece la altura de un elemento y podemos espesificar su dimencion vertical con unidaes como px % em y rem auto, el elemento ajustara su altura al contenido
+
+  *sino se especifica la altura aun elemento bloque el elemento se ajustara a la altura del contenido
+  
+  * su usamos valores con unidades absolutas, limitamos la adaptabilidad de los elementos. es recomendable usar unidades relativas 
+
+  Para los elementos de linea los Width y heigth no funcionan por default se ajusta a su contenido
+
+  si queremos que un elemento de linea responda aun ancho y aun alto explicito, necesitamos cambiar su comportamiento a travez de la propiedad de display.
+
+  La propiedad display úede recibir los valores inline-block o block
+
+
+  */
+
+.bloque {
+
+  width: 100px; /* U.Absoluta */
+  width: 50%; /* U.Relativa */
+  width: auto; /* default */
+  
+  height: 50%; /* U.Absoluta */
+  height: 100PX; /* U.Relativa */
+  height: auto; /* default */
+
+  background-color: lightcoral;
+}
+
+.linea {
+  display: block; /* cambia su visualizacion */
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+
+  background-color: lightseagreen;
+}
