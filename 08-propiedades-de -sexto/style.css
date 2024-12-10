@@ -20,28 +20,63 @@ body {
   text-aling -> define la alineacion del texto reciben left rigth center justify star y end
 
   text-decoration -> añade ñinea transversalal tecto. recive valores: none 
+
+  Text-transform -> controla la capitalizacion del texto recibe los valores: uppercase, lowercase y capitalize
+
+  line-height -> espacio entre las lineas de texto. recibe valores en px % em y remm un valor sin unidad sera relativo al valor de la fuente.
+
+  letter-spacing -> espacio entre letras recibe valores de
+
+  Tex shadow sombre del texto recibe del tecto los valores en el siguiente orden: offset-x offset-y blur color
+
+  10px 10px 10px red -> derecha y abajo
+
+  -10px -10px 10px red ->izquierda arriba
   */
 
 
 h1 {
-  color: bisque; /* keywords */
-  font-family: garamond, 'Arial Narrow Bold', sans-serif;
+  color: rgb(225, 136, 225); /* keywords */
+  font-family: 'Arial Narrow Bold', sans-serif;
   font-size: 96 px;
   font-size: 100%; /* 16% = 100 */
   font-size: xx-large;
   font-style: inherit;
   text-align: center;
   text-decoration:  underline;
+  text-transform: lowercase;
+
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-transform: lowercase;
+  text-transform: capitalize;
+
+
+
+  letter-spacing: 20px;
+  letter-spacing: 1rem;
+  letter-spacing: 2em;
+  letter-spacing: -10px;
+  letter-spacing: normal;
+  
+
+
+  text-shadow: 10px 10px 5px red;
 }
 
 p {
   color: white;
-  font-family: helvetica, tahoma;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 96 px;
   font-size: 100%; /* 16% = 100 */
   font-style: inherit;
-  text-align: right;
-  text-decoration: none;
+  
+  word-spacing: 60px;
+  word-spacing: 2rem;
+  word-spacing: 5em;
+  word-spacing: normal;
+
 }
 
 .important { 
