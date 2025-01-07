@@ -1,0 +1,64 @@
+/* Box sizing
+
+  Es la propedad quye calcula las dimenciiones de un elemento inclutendo el padding y el border. los fis ekenmebntis  qye ouede tener son:
+
+  Box sizing: content-box; // Valor po defecto
+
+    si tenemos un elemento con whidth 100px, un pading 10px y un borde de 5px , el ancho total del elemento sera de 130px.
+    
+    100px + 10px + 10px + 5px + 5px
+    ancho + padding l/r + border l/r + total del acnho
+
+    Esto es por que el padding y el border se suman al whidth del elemento
+
+    Box-sizing border-box // incluye el padding y el border
+
+      sio tenemos un elemento con width 100px un padding 10px y un boder de 5px el ancho total de un elemento sera de 100px
+    
+      wsto es por que el pading y el border de invluye en el whidth del elemento
+
+
+
+  Nota como buena practica se suele definir a todos los elementos de html la propiedad nox-sizing: border-box; desde el principio a modo de un reset basico.
+
+*{
+  Box-sizing: border-box
+  }
+
+  Esto se hace atraves del selector universal
+
+*/
+
+  /* Reset de estilos */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* estilos basicos */
+html{
+  font-family: sans-serif;
+}
+body{
+  background-color: darkslategray;
+  color: white;
+}
+
+.content-box{
+  width: 100px ;
+  height: 100px;
+  padding: 10px;
+  border: 5px solid lightgreen;
+  background-color: darksalmon;
+  box-sizing: content-box;
+}
+
+.border-box{
+  width: 100px ;
+  height: 100px;
+  padding: 10px;
+  border: 5px solid lightgreen;
+  background-color: lightslategrey;
+  box-sizing: border-box;
+}
