@@ -40,127 +40,127 @@ Los posibles valores que "Position" recive son:
 
 */
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: sans-serif;
-  color: whitesmoke;
-  background-color: darkslateblue;
+  color: rgb(240, 128, 163);
+  background-color: rgb(48, 98, 98);
 }
-.container{
-  margin: auto;
+
+.container {
+  margin: 0 auto;
   width: 300px;
   height: 300px;
-  background-color: lightblue;
-
+  background-color: mediumpurple;
 }
 
 .box {
-
   width: 100px;
   height: 100px;
 }
 
-.box-1{
+.box-1 {
   position: relative;
- /*  top: -20px; */
-  /* left: -20px; */
+  /* top: -20px;
+  left: -20px; */
   right: -20px;
   bottom: -20px;
   z-index: 20;
+  background-color: rgb(197, 187, 243);
+}
+
+.box-2 {
+  position: relative;
+  left: 50px;
+  top: -25px;
+  z-index: 10;
   background-color: lightcoral;
 }
 
-.box-2{
-  position: relative;
-  left: 50px; 
-  top: -25px; 
-  z-index: 10;
-  background-color: lightgreen;
-}
-
-.box-3{
+.box-3 {
+  z-index: 15;
   position: absolute;
-  top: 100px; 
-  left: 100px;
+  top: 100px;
   right: 0;
   bottom: 0;
-  z-index: 15;
-  background-color: lightsalmon;
+  left: 200px;
+  background-color: lightskyblue;
 }
-.box-4{
+
+.box-4 {
+  z-index: 40;
   position: absolute;
   bottom: 0;
   right: 0;
   width: 100%;
-  z-index: 40;
-  background-color: purple;
+  background-color: rgb(216, 207, 112);
 }
 
-.nav{
+nav {
   position: fixed;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
 
   width: 100%;
   height: 50px;
   text-align: center;
-  background-color: crimson;
+  background-color: cornsilk;
 }
 
-.nav a{
-  font: size 18px;
+nav a{
+  font-size: 18px;
   display: inline-block;
   padding: 12px 8px;
   text-decoration: none;
-  color: white;
+  color: rgb(77, 119, 77);
 }
 
-.nav a:hover{
+nav a:hover {
   text-decoration: underline;
 }
 
-.buttom{
+.button {
+  z-index: 20;
   position: fixed;
   right: 20px;
   bottom: 20px;
-
   width: 100px;
   height: 100px;
   font-size: 48px;
   text-align: center;
-  padding-top: 18px;
-  background-color: blueviolet;
+  padding: 10px;
   border-radius: 50%;
+  background-color: rgb(126, 25, 185);
   cursor: pointer;
 }
 
-.buttom:hover{
-  background-color: darkgreen;
+.button:hover {
+  background-color: rgb(12, 88, 186);
 }
 
-main{ 
-  width: 100px;
-  max-width: 960px;
+main {
+  width: 100%;
+  max-width: 900px;
   margin: 0 auto;
-  margin: top 50px;
-  background-color: darkblue;
+  margin-top: 50px;
+  background-color: rgb(8, 30, 52);
 }
 
 main section {
-  background-color:palegreen;
-
+  padding: 0 24px;
 }
 
-section h2{ 
+section h2 {
+  z-index: 10;
   position: sticky;
-  top: 50;
+  top: 50px;
   font-size: 34px;
-  background-color: gold;
+  background-color: rgb(6, 85, 72);
 }
 
 section p {
